@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'your@yourdomain.com'; // Your Email
+$admin_email = 'fernandocaino84@gmail.com'; // Your Email
 $message_min_length = 5; // Min Message Length
 
 
@@ -81,7 +81,7 @@ class Contact_Form{
 		if($mail)
 		{
 			$this->response_status = 1;
-			$this->response_html = '<p>Thank You!</p>';
+			$this->response_html = '<p>Gracias!</p>';
 		}
 	}
 
