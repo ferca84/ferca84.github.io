@@ -1,567 +1,803 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<html lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latinoamérica Salvaje | App Landing Page</title>
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300' rel='stylesheet' type='text/css'>
 
-<!-- Meta Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<title>Imagenes para cuadros</title>   
+    <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
 
-<meta name="description" content="Insert Your Site Description" /> 
 
-<!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
+    <!-- Pixeden Icon Font -->
+    <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
 
-<!-- Mobile Internet Explorer ClearType Technology -->
-<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
-<!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
+    <!-- PrettyPhoto -->
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
 
-<!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
-<!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
-
-<!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
-
-<!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
-<!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
-
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
-
-<!-- Modernizr -->
-<script src="_include/js/modernizr.js"></script>
-
-<!-- Analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- End Analytics -->
-
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 
-
 <body>
-
-<!-- This section is for Splash Screen -->
-<div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
-</div>
-<!-- End of Splash Screen -->
-
-<!-- Homepage Slider -->
-<div id="home-slider">	
-    <div class="overlay"></div>
-
-    <div class="slider-text">
-    	<div id="slidecaption"></div>
-    </div>   
-	
-	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Header -->
-<header>
-    <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-        <!--<div id="logo">
-        	<a id="goUp" href="#home-slider" title="Imagenes para cuadros"></a>
-        </div>-->
-        
-        <nav id="menu">
-        	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
-				<li><a href="#servicios">Servicios</a></li>
-                <li><a href="#work">Imágenes</a></li>
-                <li><a href="#about">Sobre Mi</a></li>
-                <li><a href="#contact">Contacto</a></li>
-				<li><a href="shortcodes.html" class="external">Shortcodes</a></li>
-            </ul>
-        </nav>
-        
-    </div>
-</header>
-<!-- End Header -->
-
-<!-- Our Work Section -->
-<div id="servicios" class="page">
-	<div class="container">
-    	<!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-					<h2 class="title" style="margin-bottom: 50px;">Que ofrezco</h2>
-					
-					<div style="margin: 10px;">
-					<img style="float: left; margin-right: 10px;" width="200px" height="200px" src="_include/img/work/poster00.jpg" alt="poster" />
-						<h5 style="font-size:20px;" class="title-description">Pósters duraderos impresos en Fine Art. Con borde blanco para enmarcar.
-						Fine Art reproduce con fidelidad la obra de origen, ofrece a su comprador determinadas características de durabilidad y calidad. 
-						Al utilizar tintas pigmentadas y medios de impresión libres de ácido, con un PH neutro y una alta resistencia al efecto de la luz, 
-						este tipo de copias garantizan una durabilidad mínima aproximada de 100 años. <br/><br/>
-						<h5 style="font-size:20px;" class="title-description">Tamaños disponibles: 23cm x 17cm ($ 150.-) / 35cm x 26cm ($ 250.-) / 50cm x 37cm ($ 350.-)</h5>
-						<br/>
-						<span style="font-size:18px; text-align: left; display: inherit;">Papeles: <br/>
-						Fotografías: Canson Infinity - Photosatin Premium, 270gr - Papel de arte de alta celulosa libre de ácido.<br />
-						Ilustraciones/Pinturas: Permalite texturado 200 gr  - Papel con textura, resistente al agua, con un acabado mate.</span>
-						</h5>
-					</div>
-					
-					<br />
-					
-					<div style="display:block; margin: 10px;">
-						<img style="float: left; margin-right: 10px;" width="200px" height="200px" src="_include/img/work/poster01.jpg" alt="poster" />
-						<h5 style="font-size:20px;" class="title-description">Poster de algodón impreso en Fine Art montado sobre dos maderas listo para colgar.</h5>
-						<br/>
-						<h5 style="font-size:20px;" class="title-description">Tamaños disponibles: 23cm x 17cm ($ 200.-) / 35cm x 26cm ($ 280.-) / 50cm x 37cm ($ 400.-)</h5>
-					</div>
-					
-					<br />
-					
-					<div style="display:inline-block; margin: 10px;">
-						<img style="float: left; margin-right: 10px;" width="200px" height="200px" src="_include/img/work/lienzo00.jpg" alt="lienzo" />
-						<h5 style="font-size:20px;" class="title-description">Lienzo de algodón impreso en Fine Art montado en bastidor de madera listo para colgar.
-						<br/>Canson infinity Museum Art Canvas es un canvas blanco natural que provee una calidad superior. Ideal para reproducciones de 
-						arte. Este lienzo posee una ligera textura y acabado mate, y ofrece un color que perdura a lo largo del tiempo.</h5>
-						<br/>
-						<h5 style="font-size:20px;" class="title-description">Tamaños disponibles: 24cm x 17cm ($ 250.-) / 37cm x 26cm ($ 400.-) / 52cm x 37cm ($ 550.-).</h5>
-					</div>
-					<br />
-					
-                   
-                </div>
-            </div>
+    <!-- PRELOADER -->
+    <div class="spn_hol">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
-        <!-- End Title Page -->
-        
-       
     </div>
-</div>
-<!-- End Our Work Section -->
 
-<div id="work" class="page" style="padding: 0 0;">
-	<div class="container">
-	    <!-- Title Page -->
-		<div class="row">
-			<div class="span12">
-				<div class="title-page">
-					 <h2 class="title" >Mis imágenes</h2>
-				</div>
-			</div>
-		</div>
-		<!-- End Title Page -->
-	
-	 <!-- Portfolio Projects -->
-        <div class="row">
-        	<div class="span3">
-            	<!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Imágenes</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">Todos</a></li>
-                        <li><a href="#filter" data-option-value=".asia">Asia</a></li>
-                        <li><a href="#filter" data-option-value=".norte">Norte Argentino</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li>
-                    </ul>
-                </nav>
-                <!-- End Filter -->
-            </div>
-            
-            <div class="span9">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
-                        
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 asia">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Sapa" href="_include/img/work/full/sapa_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/sapa_mini.jpg" alt="Sapa">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 asia">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Templo" href="_include/img/work/full/templo_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/templo_mini.jpg" alt="Templo">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 norte">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Llamas" href="_include/img/work/full/llamas_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/llamas_mini.jpg" alt="Llamas">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 asia">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Halong Bay" href="_include/img/work/full/halong_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/halong_mini.jpg" alt="Halong">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 norte">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Purmamarca" href="_include/img/work/full/norte_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/norte_mini.jpg" alt="Purmamarca">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 asia">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Sultan" href="_include/img/work/full/sultan_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/sultan_mini.jpg" alt="Sultan">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 asia">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Malaca" href="_include/img/work/full/malaca_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/malaca_mini.jpg" alt="Malaca">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 asia">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Cambodia" href="_include/img/work/full/cambodia_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/cambodia_mini.jpg" alt="Cambodia">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 asia">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Laos" href="_include/img/work/full/lao_full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/lao_mini.jpg" alt="Laos">
-                            </li>
-                        	<!-- End Item Project -->
+ <!-- END PRELOADER -->
+
+ <!-- =========================
+     START ABOUT US SECTION
+============================== -->
+    <section class="header parallax home-parallax page" id="HOME">
+        <h2></h2>
+        <div class="section_overlay">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="images/ic_launcher.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- NAV -->
+                            <li><a href="#HOME">HOME</a> </li>
+                            <li><a href="#ABOUT">SOBRE</a> </li>
+                            <li><a href="#FEATURES">FUNCIONALIDADES</a></li>
+                            <li><a href="#SCREENS">PANTALLAS</a> </li>
+                            <li><a href="#DOWNLOAD">DOWNLOAD </a> </li>
+                            <li><a href="#CONTACT">CONTACTO </a> </li>
                         </ul>
-                    </section>
-                    
-            	</div>
-            </div>
-        </div>
-        <!-- End Portfolio Projects -->
-	</div>
-</div>
-
-<!-- About Section -->
-<div id="about" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Quién soy</h2>
-                <!--<h3 class="title-description">Learn About our Team &amp; Culture.</h3>-->
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- People -->
-    <div class="row">
-    	
-        <!-- Start Profile -->
-    	<div style="margin-left: 35%; text-align: center;" class="span4 profile">
-        	<div class="image-wrap">
-                <!--<div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">CEO</span>
-                </div>-->
-                <img src="_include/img/profile/ferca84.jpg" alt="Fernando Caino">
-            </div>
-            <h3 class="profile-name">Fernando Caíno</h3>
-            <p class="profile-description">Aficionado a la fotografía y edición digital. Amante de la naturaleza y viajes alrededor del mundo.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                     <!--<li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>-->
-                    <li><a href="https://www.facebook.com/fernando.caino"><i class="font-icon-social-facebook"></i></a></li>
-					<li><a href="https://ar.linkedin.com/pub/fernando-caíno/1b/7a5/9b6"><i class="font-icon-social-linkedin"></i></a></li>
-                    <li><a href="https://plus.google.com/u/0/"><i class="font-icon-social-google-plus"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile 
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Creative Director</span>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
-                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
-            </div>
-            <h3 class="profile-name">Jane Helf</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-email"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead Designer</span>
-                </div>
-                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
-            </div>
-            <h3 class="profile-name">Joshua Insanus</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-    </div>
-    <!-- End People -->
-</div>
-</div>
-<!-- End About Section -->
+                <!-- /.container- -->
+            </nav>
 
-
-<!-- Contact Section -->
-<div id="contact" class="page">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Escribime</h2>
-                <h3 class="title-description">Para solicitar cualquiera de los productos, en sus distintos tamaños, conocer tiempos, forma de pago y de entrega, o por cualquier otra duda, 
-				por favor no dudes en escribirme en el formulario que está a continuación.
-				<br />Me pondré en contacto a la mayor brevedad posible</h3>
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- Contact Form -->
-    <div class="row">
-    	<div class="span9">
-        
-        	<form id="contact-form" class="contact-form" action="#">
-            	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="Nombre" value="" name="name" />
-                </p>
-                <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email" value="" name="email" />
-                </p>
-                <p class="contact-message">
-                	<textarea id="contact_message" placeholder="Tu mensaje" name="message" rows="15" cols="40"></textarea>
-                </p>
-                <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="#">Enviar</a>
-                </p>
-                
-                <div id="response">
-                
+            <div class="container home-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo text-center">
+                                <!-- LOGO -->
+                            <img src="images/ic_launcher.png" alt="" style="width:100px; height:100px;">
+                        </div>
+                    </div>
                 </div>
-            </form>
-         
-        </div>
-        
-         <!--<div class="span3">
-        	<div class="contact-details">
-        		<h3>Contact Details</h3>
-                <ul>
-                    <li><a href="#">hello@brushed.com</a></li>
-                    <li>(916) 375-2525</li>
-                    <li>
-                        Brushed Studio
-                        <br>
-                        5240 Vanish Island. 105
-                        <br>
-                        Unknow
-                    </li>
-                </ul>
-            </div>
-        </div>-->
-    </div>
-    <!-- End Contact Form -->
-</div>
-</div>
-<!-- End Contact Section -->
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="home_text">
+                            <!-- TITLE AND DESC -->
+							<h1>Latinoamérica Salvaje</h1>
+                            <p>Guía offline de Parques y demás lugares naturales de Latinoamérica</p>
 
-<!-- Twitter Feed 
-<div id="twitter-feed" class="page-alternate">
-	<div class="container">
-    	<div class="row">
-            <div class="span12">
-                <div class="follow">
-                    <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
-                </div>
-                    
-                <div id="ticker" class="query"> 
+                            <div class="download-btn">
+                            <!-- BUTTON -->
+                                <a class="btn home-btn wow fadeInLeft" href="#DOWNLOAD">Download</a>
+                                <a class="tuor btn wow fadeInRight" href="#ABOUT">Realiza un tour <i class="fa fa-angle-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-sm-4">
+                        <div class="home-iphone">
+                            <img src="images/app_home.png" alt="Home">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- End Twitter Feed -->
+    </section>
 
-<!-- Socialize -->
-<div id="social-area" class="page">
-	<div class="container">
-    	<div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <!--<li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <!--<li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
-                        <!--<li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
-                        <!--<li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>-->
-                        <li><a href="https://www.facebook.com/fernando.caino" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        <li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
-                        <li><a href="https://ar.linkedin.com/pub/fernando-caíno/1b/7a5/9b6" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <!--<li><a href="http://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
-                        <!--<li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>-->
-                    </ul>
-                </nav>
+    <!-- END HEADER SECTION -->
+
+
+
+
+ <!-- =========================
+     START ABOUT US SECTION
+============================== -->
+
+
+    <section class="about page" id="ABOUT">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- ABOUT US SECTION TITLE-->
+                    <div class="section_title">
+                        <h2>Sobre la App</h2>
+                        <p>En "Latinoamérica Salvaje" podrás buscar de cada país del continente cuales son sus Parques Nacionales, Provinciales, Reservas Naturales, lugares declarados como Patrimonio de la Humanidad por la Unesco, refugios de montaña, pueblos originarios y fauna autóctona. Para ello solo debes descargarte el contenido a tu equipo.</p>
+						<p>Luego ingresas al país que deseas ver, y desde la pantalla principal podrás buscar el lugar que buscas sea por tipo de lugar, por regiones, provincias o incluso por texto libre. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="inner_about_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                        <!-- PHONE -->
+                            <img src="images/app_varias2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                        <!-- TITLE -->
+                        <div class="inner_about_title">
+                            <h2>¿Por qué <br>descargarla?</h2>
+                            <p>Si estás pensando en más razones para descargarte "Latinoamérica Salvaje" recordá:</p>
+                        </div>
+                        <div class="inner_about_desc">
+
+                            <!-- SINGLE DESC -->
+                            <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
+                                <!-- ICON -->
+                                <div><i class="pe-7s-timer"></i></div>
+                                <!-- HEADING DESCRIPTION -->
+                                <h3>Funciona sin conexión a internet</h3>
+                                <p>Una vez descargado el contenido de un país, ya podrás disfrutar del mismo cuando y donde quieras sin necesidad de conectarte a ninguna red.</p>
+                            </div>
+                            <!-- END SINGLE DESC -->
+
+
+                            <!-- SINGLE DESC -->
+                            <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1.5s">
+                                <!-- ICON -->
+                                <div><i class="pe-7s-target"></i></div>
+                                <!-- HEADING DESCRIPTION -->
+                                <h3>Toda la información en un mismo lugar</h3>
+                                <p>No hace falta que pierdas tiempo buscando en cientos de páginas de internet para interiorizarte de los lugares. Todo lo puedes leer desde un mismo lugar.</p>
+                            </div>
+                            <!-- END SINGLE DESC -->
+
+
+                            <!-- SINGLE DESC -->
+                            <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="2s">
+                                <!-- ICON -->
+                                <div><i class="pe-7s-stopwatch"></i></div>
+                                <!-- HEADING DESCRIPTION -->
+                                <h3>Guías de los parques y mapas de rutas de las provincias</h3>
+                                <p>Puede elegir de descargarte las guías de cada parque (con senderos o puntos importantes) y los mapas de rutas de cada provincia para ubicarte mejor y saber por donde ir.</p>
+                            </div>
+                            <!-- END SINGLE DESC -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeftBig">
+                    <!-- VIDEO LEFT TITLE -->
+                        <div class="video_title">
+                            <h2>Aplicación única  <br>en el mercado</h2>
+                            <p>No existe otra igual para conocer en profundidad la información de parques y demás sitios de interes natural de Latinoamérica</p>
+                        </div>
+                        <div class="video-button">
+                            <!-- BUTTON -->
+                            <a class="btn btn-primary btn-video" href="#FEATURES" role="button">Funcionalidades</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInRightBig">
+                         <!-- VIDEO -->
+                        <div class="video">
+                            <iframe src="https://player.vimeo.com/video/84787958?title=0&amp;byline=0&amp;portrait=0&amp;color=cc0000" width="560" height="315"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us -->
+
+
+
+
+
+ <!-- =========================
+     START TESTIMONIAL SECTION
+============================== -->
+
+    <section id="TESTIMONIAL" class="testimonial parallax">
+        <div class="section_overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow bounceInDown">
+                        <div id="carousel-example-caption-testimonial" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators 
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-caption-testimonial" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-caption-testimonial" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-caption-testimonial" data-slide-to="2"></li>
+                            </ol>-->
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                <!-- IMAGE -->
+                                                <img src="images/fer_profile.png" alt="">
+                                                <div class="testimonial_caption">
+                                                   <!-- DESCRIPTION -->  
+                                                    <h2>Fernando Caíno</h2>
+                                                    <h4><span>Desarrollador de</span>  Latinoamérica Salvaje</h4>
+                                                    <p>Soy un desarrollador de software apasionado por la tecnología y por la naturaleza. Amante de los trekkings por la montaña y de emprender viajes a lugares distantes. La unión de estas pasiones me llevaron a realizar "Latinoamérica Salvaje".</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="item">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                 <!-- IMAGE 
+                                                <img src="images/client_2.png" alt="">
+                                                <div class="testimonial_caption">
+                                                <!-- DESCRIPTION 
+                                                    <h2>Jane Smith</h2>
+                                                    <h4><span>SR. Developer,</span> The Code Cafe</h4>
+                                                    <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                <!-- IMAGE 
+                                                <img src="images/client_3.png" alt="">
+                                                <div class="testimonial_caption">
+                                                <!-- DESCRIPTION 
+                                                    <h2>Jane Smith</h2>
+                                                    <h4><span>SR. Developer,</span> The Code Cafe</h4>
+                                                    <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- END TESTIMONIAL SECTION -->
+
+
+
+<!-- =========================
+     START FEATURES
+============================== -->
+    <section id="FEATURES" class="features page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- FEATURES SECTION TITLE -->
+                    <div class="section_title wow fadeIn" data-wow-duration="1s">
+                        <h2>Funcionalidades</h2>
+                        <p>Se pueden destacar los siguientes atributos:</p>
+                    </div>
+                    <!-- END FEATURES SECTION TITLE -->
+                </div>
+            </div>
+        </div>
+
+        <div class="feature_inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 right_no_padding wow fadeInLeft" data-wow-duration="1s">
+                        <!-- FEATURE -->
+
+                        <div class="left_single_feature">
+                            <!-- ICON -->
+                            <div><span class="pe-7s-like"></span></div>
+
+                            <!-- FEATURE HEADING AND DESCRIPTION -->
+                            <h3>Diseño claro y moderno<span>/</span></h3>
+                            <p>Se emplearon las prácticas mas recientes de diseño, ajustandose a los standares de Android Design</p>
+                        </div>
+
+                        <!-- END SINGLE FEATURE -->
+
+
+                        <!-- FEATURE -->
+                        <div class="left_single_feature">
+                            <!-- ICON -->
+                            <div><span class="pe-7s-science"></span></div>
+
+                            <!-- FEATURE HEADING AND DESCRIPTION -->
+                            <h3>Sincronización a demanda<span>/</span></h3>
+                            <p>Puedes descargarte el contenido de cada país cuando deseés para utilizarlo de modo offline. En caso que haya cambios en un sitio en particular, no hace falta descargar todo de nuevo, simplemente sincronizás y se actualizá lo que está distinto.</p>
+                        </div>
+                        <!-- END SINGLE FEATURE -->
+
+
+                        <!-- FEATURE -->
+                        <div class="left_single_feature">
+                            <!-- ICON -->
+                            <div><span class="pe-7s-look"></span></div>
+
+                            <!-- FEATURE HEADING AND DESCRIPTION -->
+                            <h3>Información centralizada<span>/</span></h3>
+                            <p>No hace falta ir abriendo multiples páginas para ver que se puede hacer en un determinado parque. Todo lo puedes consultar desde el mismo lugar.</p>
+                        </div>
+                        <!-- END SINGLE FEATURE -->
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature_iphone">
+                            <!-- FEATURE PHONE IMAGE -->
+                            <img class="wow bounceIn" data-wow-duration="1s" src="images/app_parques.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 left_no_padding wow fadeInRight" data-wow-duration="1s">
+
+                        <!-- FEATURE -->
+                        <div class="right_single_feature">
+                            <!-- ICON -->
+                            <div><span class="pe-7s-monitor"></span></div>
+
+                            <!-- FEATURE HEADING AND DESCRIPTION -->
+                            <h3><span>/</span>Compatibilidad en diversos equipos Android</h3>
+                            <p>Disponible para usarse en equipos con Android 4.0.3 y superiores, cubriendo el 85% del mercado actual de Android. No hace falta que tengas el último equipo para disfrutarlo.</p>
+                        </div>
+                        <!-- END SINGLE FEATURE -->
+
+
+                        <!-- FEATURE -->
+                        <div class="right_single_feature">
+                            <!-- ICON -->
+                            <div><span class="pe-7s-phone"></span></div>
+
+                            <!-- FEATURE HEADING AND DESCRIPTION -->
+                            <h3><span>/</span>Funcionamiento OFFLINE</h3>
+                            <p>Una vez descargado el contenido del país, no hace falta que tengas internet en tu equipo, todo se instala localmente. Puedes eliminar las guías una vez que las hayas usado y descargar nuevamente cuantas veces quieras.</p>
+                        </div>
+                        <!-- END SINGLE FEATURE -->
+
+
+                        <!-- FEATURE -->
+                        <div class="right_single_feature">
+                            <!-- ICON -->
+                            <div><span class="pe-7s-gleam"></span></div>
+
+                            <!-- FEATURE HEADING AND DESCRIPTION -->
+                            <h3><span>/</span>Interfaces simples para entender </h3>
+                            <p>Gracias a realizar test con distintos usuarios, se puedo llegar a una interface simple de aprender a usar. En tan solo unos minutos ya sabrás como explotar el máximo potencial de la aplicación.</p>
+                        </div>
+                        <!-- END SINGLE FEATURE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END FEATURES SECTION -->
+
+
+
+<!-- =========================
+     START CALL TO ACTION
+============================== -->
+    <div class="call_to_action">
+        <div class="container">
+            <div class="row wow fadeInLeftBig" data-wow-duration="1s">
+                <div class="col-md-9">
+                    <p>¿Querés ver más antes de descargala?.</p>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary btn-action" href="#" role="button">Descagargar ahora</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Socialize -->
 
-<!-- Footer -->
-<footer>
-	<p class="credits">&copy;2015 Imágenes para cuadros. <!--<a href="http://themes.alessioatzeni.com/html/brushed/" title="Brushed | Responsive One Page Template">Brushed Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a>--></p>
-</footer>
-<!-- End Footer -->
-
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
+    <!-- END CALL TO ACTION -->
 
 
-<!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="_include/js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
+<!-- =========================
+     Start APPS SCREEN SECTION
+============================== -->
+    <section class="apps_screen page" id="SCREENS">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 wow fadeInBig" data-wow-duration="1s">
+                        <!-- APPS SCREEN TITLE -->
+                        <div class="section_title">
+                            <h2>Pantallas</h2>
+                            <p>Aquí están las principales pantallas de la app. Así te darás una idea mejor de lo que vas a poder ver y hacer en ella.</p>                           
+                        </div>
+                        <!-- END APPS SCREEN TITLE -->
+                    </div>
+                </div>
+            </div>
+
+        <div class="screen_slider">
+            <div id="demo" class="wow bounceInRight" data-wow-duration="1s">
+                <div id="owl-demo" class="owl-carousel">
+
+                    <!-- APPS SCREEN IMAGES -->
+                    <div class="item">
+                    <a href="images/screens/iPhone04.png" rel="prettyPhoto[pp_gal]"><img src="images/app_home.png" width="60" height="60" alt="APPS SCREEN" /></a>
+                    </div>
+                    <div class="item">
+                        <a href="images/screens/iPhone05.png" rel="prettyPhoto[pp_gal]"><img src="images/app_menu.png" width="60" height="60" alt="APPS SCREEN" /></a>
+                    </div>
+                    <div class="item">
+                        <a href="images/screens/iPhone06.png" rel="prettyPhoto[pp_gal]"><img src="images/app_spinner.png" width="60" height="60" alt="APPS SCREEN" /></a>
+                    </div>
+                    <div class="item">
+                        <a href="images/screens/iPhone07.png" rel="prettyPhoto[pp_gal]"><img src="images/app_detalle.png" width="60" height="60" alt="APPS SCREEN" /></a>
+                    </div>
+                    <div class="item">
+                        <a href="images/screens/iPhone08.png" rel="prettyPhoto[pp_gal]"><img src="images/app_perfil.png" width="60" height="60" alt="APPS SCREEN" /></a>
+                    </div>
+                    <div class="item">
+                        <a href="images/screens/iPhone09.png" rel="prettyPhoto[pp_gal]"><img src="images/app_mapa.png" width="60" height="60" alt="APPS SCREEN" /></a>
+                    </div>
+					<div class="item">
+                        <a href="images/screens/iPhone09.png" rel="prettyPhoto[pp_gal]"><img src="images/app_adm.png" width="60" height="60" alt="APPS SCREEN" /></a>
+                    </div>
+					<div class="item">
+                        <a href="images/screens/iPhone09.png" rel="prettyPhoto[pp_gal]"><img src="images/app_visitados.png" width="60" height="60" alt="APPS SCREEN" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ENS APPS SCREEN -->
+
+
+
+
+
+<!-- =========================
+     Start FUN FACTS
+============================== 
+
+
+    <section class="fun_facts parallax">
+        <div class="section_overlay">
+            <div class="container wow bounceInLeft" data-wow-duration="1s">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <div class="single_fun_facts">
+                            <i class="pe-7s-cloud-download"></i>
+                            <h2><span  class="counter_num">699</span> <span>+</span></h2>
+                            <p>Downloads</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single_fun_facts">
+                            <i class="pe-7s-look"></i>
+                            <h2><span  class="counter_num">1999</span> <span>+</span></h2>
+                            <p>Likes</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single_fun_facts">
+                            <i class="pe-7s-comment"></i>
+                            <h2><span  class="counter_num">199</span> <span>+</span></h2>
+                            <p>Feedbacks</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single_fun_facts">
+                            <i class="pe-7s-cup"></i>
+                            <h2><span  class="counter_num">10</span> <span>+</span></h2>
+                            <p>Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END FUN FACTS -->
+
+
+
+
+<!-- =========================
+     START DOWNLOAD NOW 
+============================== -->
+    <section class="download page" id="DOWNLOAD">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- DOWNLOAD NOW SECTION TITLE -->
+                    <div class="section_title">
+                        <h2>descargar ya</h2>
+                        <p>Puede descargarlo directamente desde aquí o desde el <a href="google.com">play store de Google.</a></p>
+                    </div>
+                    <!--END DOWNLOAD NOW SECTION TITLE -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="download_screen text-center wow fadeInUp" data-wow-duration="1s">
+                        <img src="images/app_descargar.png" style="width: 200px; margin-bottom: 10px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="available_store">
+            <div class="container  wow bounceInRight" data-wow-duration="1s">
+                <div class="col-md-6">
+                    <div class="available_title">
+                        <h2>Disponible en</h2>
+                        <!--<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>-->
+                    </div>
+                </div>
+
+                <!-- DOWNLOADABLE STORE -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <!-- <a href="">
+                            <div class="col-md-4 no_padding">
+                                <div class="single_store">
+                                    <i class="fa fa-apple"></i>
+                                    <div class="store_inner">
+                                        <h2>iOS</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>-->
+                        <div class="col-md-4 no_padding">
+                            <a href="">
+                                <div class="single_store">
+                                    <i class="fa fa-android"></i>
+                                    <div class="store_inner">
+                                        <h2>ANDROID</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="col-md-4 no_padding">
+                            <a href="">
+                                <div class="single_store last">
+                                    <i class="fa fa-windows"></i>
+                                    <div class="store_inner">
+                                        <h2>WINDOWS</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+                <!-- END DOWNLOADABLE STORE -->
+            </div>
+        </div>
+    </section>
+    <!-- END DOWNLOAD -->
+
+<!-- =========================
+     START CONTCT FORM AREA
+============================== -->
+    <section class="contact page" id="CONTACT">
+        <div class="section_overlay">
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1 wow bounceIn">
+                    <!-- Start Contact Section Title-->
+                    <div class="section_title">
+                        <h2>Contactáme</h2>
+                        <p>Si quieres preguntar, comentar o sugerir por favor no dudes en escribirme.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact_form wow bounceIn">
+                <div class="container">
+
+                <!-- START ERROR AND SUCCESS MESSAGE -->
+                    <div class="form_error text-center">
+                        <div class="name_error hide error">Por favor ingrese su nombre</div>
+                        <div class="email_error hide error">Por favor ingrese un Email</div>
+                        <div class="email_val_error hide error">Por favor ingrese un Email correcto</div>
+                        <div class="message_error hide error">Por favor ingrese un mensaje</div>
+                    </div>
+                    <div class="Sucess"></div>
+                <!-- END ERROR AND SUCCESS MESSAGE -->
+
+                <!-- FORM -->    
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="text" class="form-control" id="subject" placeholder="Titulo">
+                            </div>
+
+
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" rows="25" cols="10" placeholder="  Mensaje..."></textarea>
+                                <button type="button" class="btn btn-default submit-btn form_submit">ENVIAR</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- END FORM --> 
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow bounceInLeft">
+                        <div class="social_icons">
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href=""><i class="fa fa-dribbble"></i></a>
+                                </li>
+                                <li><a href=""><i class="fa fa-behance"></i></a>
+                                </li>
+                                <li><a href=""><i class="fa fa-youtube-play"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTACT -->
+
+<!-- =========================
+     Start Subscription Form 
+============================== -->
+
+
+
+    <!--<section class="subscribe parallax subscribe-parallax" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+        <div class="section_overlay wow lightSpeedIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+
+                        <!-- Start Subscribe Section Title
+                        <div class="section_title">
+                            <h2>SUBSCRIBE US</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                        </div>
+                        <!-- End Subscribe Section Title 
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row  wow lightSpeedIn">
+                    <div class="col-md-6 col-md-offset-3">
+                        <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES 
+                        <div class="subscription-success"></div>
+                        <div class="subscription-error"></div>
+
+
+                        <form id="mc-form" class="subscribe_form">
+                            <div class="form-group">
+                                <!-- EMAIL INPUT BOX 
+                                <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter Email Address">
+                            </div>
+
+                                <!-- SUBSCRIBE BUTTON 
+                            <button type="submit" class="btn btn-default subs-btn">Submit</button>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- END SUBSCRIPBE FORM -->
+
+
+<!-- =========================
+     FOOTER 
+============================== -->
+
+    <section class="copyright">
+        <h2></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copy_right_text">
+                    <!-- COPYRIGHT TEXT -->
+                        <p>Copyright &copy; 2016 <a href="">Latinoamérica Salvaje</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="scroll_top">
+                        <a href="#HOME"><i class="fa fa-angle-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.ajaxchimp.langs.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/script.js"></script>
+
+
 
 </body>
+
 </html>
