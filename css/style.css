@@ -141,7 +141,7 @@ p {
     color: #f39c12;
 }
 .header {
-    background: url(../images/home1.JPG);
+    background: url(../images/home.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -388,7 +388,7 @@ tuor:visited {
     height: auto;
 }
 .testimonial {
-    background: url(../images/testimonial1.jpg);
+    background: url(../images/testimonial.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
