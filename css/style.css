@@ -741,6 +741,7 @@ div.carousel-inner .item img {
     background: #f1f1f1;
     background-repeat: no-repeat;
     background-size: cover;
+	padding-bottom: 40px;
 }
 .contact_form {
     padding-top: 30px;
@@ -813,24 +814,24 @@ div.carousel-inner .item img {
     border-color: #f39c12;
 }
 .social_icons {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    /*padding-top: 50px;
+    padding-bottom: 70px;*/
 }
 .social_icons ul {
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 .social_icons ul li {
     list-style: none;
     display: inline;
-    padding-left: 10px
+    /*padding-left: 10px*/
 }
 .social_icons ul li a {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    border: 1px solid #9d9d9d;
+    /*border: 1px solid #9d9d9d;*/
     border-radius: 3px;
     width: 45px;
     height: 45px;
@@ -845,8 +846,8 @@ div.carousel-inner .item img {
     font-size: 20px;
 }
 .social_icons ul li a:hover {
-    background: #f39c12;
-    border: 1px solid #f39c12;
+    /*background: #f39c12;*/
+    /*border: 1px solid #f39c12;*/
     color: #fff
 }
 .error {
@@ -996,7 +997,7 @@ div.carousel-inner .item img {
     text-align: right;
 }
 .scroll_top a {
-    background: #f39c12;
+    /*background: #f39c12;*/
     padding: 25px;
 }
 .scroll_top a i {
