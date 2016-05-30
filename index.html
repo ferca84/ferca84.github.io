@@ -415,8 +415,8 @@
                             <div><span class="pe-7s-gleam"></span></div>
 
                             <!-- FEATURE HEADING AND DESCRIPTION -->
-                            <h3><span>/</span>Interfaces simples para entender </h3>
-                            <p>Gracias a realizar test con distintos usuarios, se puedo llegar a una interface simple de aprender a usar. En tan solo unos minutos ya sabrás como explotar el máximo potencial de la aplicación.</p>
+                            <h3><span>/</span>Oportunidad de publicitar tu local </h3>
+                            <p>Si quieres que la gente sepa de tu local cercano al parque, ingresa <a target="blank" href="locales.html">aquí</a> para enterarte más</p>
                         </div>
                         <!-- END SINGLE FEATURE -->
                     </div>
@@ -661,7 +661,7 @@
                 <!-- END ERROR AND SUCCESS MESSAGE -->
 
                 <!-- FORM -->    
-                    <form id="formContacto" role="form">
+                    <form id="formContacto">
                         <div class="row">
                             <div class="col-md-4">
                                 <input type="text" class="form-control" id="name" placeholder="Nombre" required>
@@ -811,7 +811,7 @@
 <script>
  $( document ).ready(function() {
  
-	$("#formContacto").submit(function(e){
+	/*$("#formContacto").submit(function(e){
 
 		   var formulario = {
 				nombre: $('#name').val(),
@@ -820,7 +820,7 @@
 				mensaje: $('#message').val()
 			};
 			
-			var formJson = formulario.Json
+			var formJson = JSON.stringify(formulario);
 			
 			$.ajax({
 				type: "POST",
@@ -842,7 +842,7 @@
 			
 			e.preventDefault();
 			return false;
-		});
+		});*/
 	});
 </script>
 

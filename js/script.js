@@ -250,6 +250,15 @@ $(document).ready(function() {
     $(".form_submit").click(function() {
 
         "use strict";
+		
+		/*var formulario = {
+				nombre: $('#name').val(),
+				email: $('#email').val(),
+				titulo: $('#subject').val(),
+				mensaje: $('#message').val()
+			};
+			
+		var formJson = JSON.stringify(formulario);*/
         
         var name = $("#name").val();
         var emaild = $("#email").val();
@@ -282,18 +291,18 @@ $(document).ready(function() {
         }
         if (name && emaild && message) {
             $.ajax({
-                url: 'contact.php',
+                url: 'php/contacto.php',
                 data: {
-                    name: name,
-                    emaild: emaild,
-                    subject: subject,
-                    message: message
-                },
+					nombre: name,
+					email: emaild,
+					titulo: subject,
+					mensaje: message
+				},
                 type: 'POST',
                 success: function(data) {
                     $(".Sucess").show();
                     $(".Sucess").fadeIn(2000);
-                    $(".Sucess").html("<i class='fa fa-check'></i> Dear <b>" + name + "</b> Thank you for your inquiry we will respond to you as soon as possible!");
+                    $(".Sucess").html("<i class='fa fa-check'></i> Estimado <b>" + name + "</b> Gracias por contactarnos. Responderemos su inquietud lo mas breve posible");
                     $("#Name").val("");
                     $("#Email").val("");
                     $("#Subject").val("");
