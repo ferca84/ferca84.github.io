@@ -16,14 +16,9 @@
         </a-marker> <!-- add a simple camera <a-entity camera></a-entity>
     </a-scene>-->
 	<a-scene embedded artoolkit='sourceType: webcam;'>
-	  <a-assets>
-		<video id="penguin-sledding" autoplay loop="true" src="video2.mp4"></video>
-	  </a-assets>
-
-	  <!-- Using the asset management system. -->
-	  <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
-		<a-marker-camera preset='hiro'></a-marker-camera>
-	  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. 
-	  <a-video src="airbending.mp4"></a-video>-->
+	  <a-marker preset="hiro">
+            <a-box position='0 0.5 0' material='color: black;'></a-box>
+  	</a-marker>
+  	<a-entity camera></a-entity>
 	</a-scene>
 </body>
