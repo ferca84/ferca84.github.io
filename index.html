@@ -45,24 +45,37 @@
 				margin: 10px 0;
 			}
 			
-			.ppvx_btn {
-				background-color: #0070ba;
-				border-radius: 1.5rem;
-				border: 0.0625rem solid #0070ba;
-				color: #ffffff;
-				cursor: pointer;
-				display: inline-block;
-				font-size: 0.9375rem;
-				line-height: 1.5rem;
-				font-family: "PayPalSansSmall-Regular", Helvetica Neue, Arial, sans-serif;
-				font-weight: normal;
-				font-weight: 700;
-				min-width: 6rem;
-				padding: 0.6875rem 1.4375rem;
-				text-align: center;
-				text-decoration: none;
-				transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+			.chat-container {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				max-width: 50px;
+				height: auto;
+				position: fixed;
+				bottom: 27px;
+				right: 25px;
+				z-index: 999;
+				-webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.52);
+				-moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.52);
+				box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.52);
+				-webkit-border-radius: 50px 50px 50px 50px;
 			}
+			
+			.chat-button {
+				width: 100% margin:0;
+				cursor: pointer;
+				user-select: none;
+				padding: 10px 0;
+				background-color: #2ab960;
+				text-align: center;
+				color: #fff;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 600;
+				-webkit-border-radius: 50px 50px 50px 50px;
+				border: 0px solid #000000;
+			}
+			
+
 			</style>
 		</head>
 		<body>
@@ -211,6 +224,7 @@
 									<li>- Gastos veterinarios y medicación</li>
 									<li>- Construcción y mejoras de instalaciones del refugio</li>
 									<li>- Salario de cuidadores del refugio</li>
+									<li>- Castraciones</li>
 								</ul>
 								
 								<div>
@@ -441,7 +455,7 @@
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/nDMurQVQaHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="description">
-								<h4>Nos pudiste ver en TN</h4>
+								<h4>Nos pudiste ver en Canal 13</h4>
 								
 							</div>
 						</div>
@@ -452,6 +466,14 @@
 				</div>	
 			</section>
 			<!-- End video Area -->
+			
+			<section class="chat-container">
+				<div class="chat-button">
+					<a target="_blank" href="https://api.whatsapp.com/send?phone=5491141613093&amp;text=Hola%2C%20me%20comunico%20para%20saber%20mas%20del%20Refugio%20">
+						<img alt="" class="nicdark_display_none_all_responsive" width="30" src="img/whatsapp.png">
+					</a>
+				</div>
+		   </section>
 			
 			
 			<!-- start footer Area -->		
