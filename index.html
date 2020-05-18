@@ -1,11 +1,542 @@
-<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
-<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
-<body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded arjs='sourceType: webcam;'>
-	<a-marker-camera preset='hiro'></a-marker-camera>
-		 <a-video id="inputVideo" src="video2.mp4" width="2" height="2" position="0 0 0"></a-video> 
-		
-		 <a-entity camera> </a-entity> 
-	</a-scene>
-</body>
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="favicon.ico">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Refugio Zoobrevivientes</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			
+			<style>
+			
+			.miParrafo {
+				font-size: 16px;
+			}
+			
+			.seccionAyuda {
+			    background-color: #eaeaea;
+				padding: 50px 0;
+				font-size: 16px;
+			}
+			
+			.seccionAyuda ul li {
+				margin: 10px 0;
+			}
+			
+			.ppvx_btn {
+				background-color: #0070ba;
+				border-radius: 1.5rem;
+				border: 0.0625rem solid #0070ba;
+				color: #ffffff;
+				cursor: pointer;
+				display: inline-block;
+				font-size: 0.9375rem;
+				line-height: 1.5rem;
+				font-family: "PayPalSansSmall-Regular", Helvetica Neue, Arial, sans-serif;
+				font-weight: normal;
+				font-weight: 700;
+				min-width: 6rem;
+				padding: 0.6875rem 1.4375rem;
+				text-align: center;
+				text-decoration: none;
+				transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+			}
+			</style>
+		</head>
+		<body>
+			  <header id="header" id="home">
+			    <div class="container main-menu">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="index.html"><img src="img/logo1.png" alt="" title="Refugio Zoobrevivientes" /></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active"><a href="index.html">Home</a></li>
+				          <!--<li><a href="dogs.html">Perros</a></li>-->
+				          <li><a href="https://www.facebook.com/zoobrevivientesrefugio/"><i class="fa fa-facebook"></i></a></li> 
+						  <li><a href="https://www.instagram.com/refugiozoobrevivientes/"><i class="fa fa-instagram"></i></a></li>						  
+				        </ul>
+						
+								
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="container">
+					<div class="overlay overlay-bg"></div>
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-8 col-md-12">
+							<h1 class="text-uppercase">
+								Adoptá. <br>
+								Necesitamos tu ayuda.		
+							</h1>
+							<p class="text-white sub-head">
+								No somos ni ángeles ni héroes ni súper nada… simplemente personas de convicciones fuertes con conciencia y con la necesidad de cambiar la 
+								historia que otro quiso que terminase mal…
+							</p>
+							<a href="https://www.instagram.com/refugiozoobrevivientes/" class="primary-btn header-btn text-uppercase">Encontrá una mascota para adoptar</a>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+			<!-- Start image-carusel Area -->
+			<section class="image-carusel-area">
+				<div class="container">
+					<div class="row">
+						<div class="active-image-carusel">
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/CATfe5ohtIg/"><img class="img-fluid" src="img/adopta00.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/B_6SswgBu4d/"><img class="img-fluid" src="img/adopta01.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/B_eCopoBAJh/"><img class="img-fluid" src="img/adopta02.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/B_eCQpqBqoK/"><img class="img-fluid" src="img/adopta03.jpg" alt=""></a>
+							</div>	
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/CAT9JAFBWLc/"><img class="img-fluid" src="img/adopta04.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/CAERdHdB85b/"><img class="img-fluid" src="img/adopta05.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/CAAn91xhuEC/"><img class="img-fluid" src="img/adopta06.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/B_94CK2hCCg/"><img class="img-fluid" src="img/adopta07.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/B_tWrXNh_sH/"><img class="img-fluid" src="img/adopta08.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/B_OP51BBQTi/"><img class="img-fluid" src="img/adopta09.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/B_BU5b1hOxI/"><img class="img-fluid" src="img/adopta10.jpg" alt=""></a>
+							</div>
+							<div class="single-image-carusel">
+								<a target="_blank" href="https://www.instagram.com/p/B-x2x3gh6ZZ/"><img class="img-fluid" src="img/adopta11.jpg" alt=""></a>
+							</div>															
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End image-carusel Area -->
+			
+
+					
+			
+			<!-- Start callto-top Area 
+			<section class="callto-top-area section-gap">
+				<div class="container">
+					<div class="row justify-content-between callto-top-wrap pt-40 pb-40">
+						<div class="col-lg-8 callto-top-left">
+							<h1>Please select your favourite pet</h1>
+						</div>
+						<div class="col-lg-4 callto-top-right">
+							<a href="#" class="primary-btn">Fill Adoption Form</a>
+						</div>							
+					</div>
+				</div>	
+			</section>
+			<!-- End callto-top Area -->
+			
+
+			<!-- Start home-about Area -->
+			<section class="video-area">
+				<div class="container-fluid">
+				
+				<div class="row align-items-center">	
+						<div class="col-lg-6 home-about-left no-padding">
+							<img src="img/perro00.jpg" alt="">
+						</div>
+						<div class="col-lg-6 home-about-right no-padding">
+							<h1>¿Quienes somos?</h1>
+							<h5>Somos un Refugio Canino ubicado en Merlo, Provincia de Buenos Aires.</h5>
+							<p class="miParrafo">Zoobrevivientes es la materialización de la conciencia que se tiene del abandono, de la injusticia y el sufrimiento.</p>
+							<p class="miParrafo">Es el espacio físico real de la esperanza.</p>
+
+							<p class="miParrafo">Se habla mucho de sueño, para mi es la realidad, la prueba viviente de la evolución, la gratitud.</p>
+
+							<p class="miParrafo">Único hogar conocido para algunos, un nexo con un nuevo hogar para otros… con historias felices y muchas demasiado tristes.</p>
+
+							<p class="miParrafo">No somos ni ángeles ni héroes ni súper nada… simplemente personas de convicciones fuertes con conciencia y con la necesidad de cambiar la historia que otro quiso que terminase mal…</p>
+
+							<p class="miParrafo">Zoobrevivientes es un lugar que te marca para siempre en donde se recibe el amor en estado puro.</p>
+						</div>
+					</div>
+				
+				
+				
+					<div class="seccionAyuda row justify-content-center align-items-center">	
+						<div style="padding: 0;" class="col-lg-12 home-about-right no-padding">
+
+							<h1>¿Cómo podés ayudarnos?</h1>
+							<p><strong>Con tus donaciones</strong></p>
+							<p>Todo el dinero recaudado será utilizado para:</p>
+								<ul>
+									<li>- Pagar el Alquiler mensual del Refugio</li>
+									<li>- Compra de Alimento Balanceado para los perros</li>
+									<li>- Gastos veterinarios y medicación</li>
+									<li>- Construcción y mejoras de instalaciones del refugio</li>
+								</ul>
+								
+								<div>
+									<h1>Donar con Mercado Pago</h1>
+									<p>
+										<img src="img/version-horizontal-small.png" alt="logo de Mercado Pago" />
+									</p>
+									<p>
+									Al hacer click en un botón, se te abre un formulario para pagar con los distintos medios de pago disponibles. (7% queda para pagar los servicios de mercado pago)
+									</p>
+									<p>
+										<a href="http://mpago.la/181i" target="_blank"><img data-attachment-id="14" data-permalink="https://refugiozoobrevivientes.wordpress.com/acerca-de/button-8/" data-orig-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-8.png" data-orig-size="373,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="button (8)" data-image-description="" data-medium-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-8.png?w=300" data-large-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-8.png?w=373" class="alignnone wp-image-14 size-medium" src="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-8.png?w=300&amp;h=32" alt="button (8)" width="300" height="32" srcset="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-8.png?w=300&amp;h=32 300w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-8.png?w=150&amp;h=16 150w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-8.png 373w" sizes="(max-width: 300px) 100vw, 300px"></a>
+									</p>
+									<p>
+										<a href="http://mpago.la/GJyr" target="_blank"><img data-attachment-id="13" data-permalink="https://refugiozoobrevivientes.wordpress.com/acerca-de/button-9/" data-orig-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-9.png" data-orig-size="385,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="button (9)" data-image-description="" data-medium-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-9.png?w=300" data-large-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-9.png?w=385" class="alignnone wp-image-13 size-medium" src="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-9.png?w=300&amp;h=31" alt="button (9)" width="300" height="31" srcset="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-9.png?w=300&amp;h=31 300w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-9.png?w=150&amp;h=16 150w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-9.png 385w" sizes="(max-width: 300px) 100vw, 300px"></a>
+									</p>
+									<p>
+										<a href="http://mpago.la/iT4X" target="_blank"><img data-attachment-id="12" data-permalink="https://refugiozoobrevivientes.wordpress.com/acerca-de/button-10/" data-orig-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-10.png" data-orig-size="385,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="button (10)" data-image-description="" data-medium-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-10.png?w=300" data-large-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-10.png?w=385" class="alignnone wp-image-12 size-medium" src="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-10.png?w=300&amp;h=31" alt="button (10)" width="300" height="31" srcset="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-10.png?w=300&amp;h=31 300w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-10.png?w=150&amp;h=16 150w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-10.png 385w" sizes="(max-width: 300px) 100vw, 300px"></a>
+									</p>
+									
+									<p>
+										<a href="http://mpago.la/wnA4" target="_blank"><img data-attachment-id="17" data-permalink="https://refugiozoobrevivientes.wordpress.com/acerca-de/button-11/" data-orig-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-11.png" data-orig-size="385,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="button (11)" data-image-description="" data-medium-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-11.png?w=300" data-large-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-11.png?w=385" class="alignnone wp-image-17 size-medium" src="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-11.png?w=300&amp;h=31" alt="button (11)" width="300" height="31" srcset="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-11.png?w=300&amp;h=31 300w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-11.png?w=150&amp;h=16 150w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-11.png 385w" sizes="(max-width: 300px) 100vw, 300px"></a>
+									</p>
+									
+									<p>
+										Al hacer click en el botón para donar mensualmente desde tu tarjeta, estás de acuerdo a que se debite el monto que usted elija POR MES de tu tarjeta de débito o crédito.
+									</p>
+									
+									<p>
+										<a href="http://mpago.la/p4Fu" target="_blank"><img data-attachment-id="38" data-permalink="https://refugiozoobrevivientes.wordpress.com/acerca-de/button-14/" data-orig-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-14.png" data-orig-size="519,54" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="button-14" data-image-description="" data-medium-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-14.png?w=300" data-large-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-14.png?w=519" class="alignnone size-full wp-image-38" src="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-14.png?w=702" alt="button-14" srcset="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-14.png 519w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-14.png?w=150 150w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-14.png?w=300 300w" sizes="(max-width: 519px) 100vw, 519px"></a>
+									</p>
+									
+								</div>
+								
+								<div>
+									<h1>Donar con Pay Pal</h1>
+									<p>
+										<img src="img/paypal.png" width="121" alt="logo de Pay Pal" />
+									</p>
+									
+									<p>
+										<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=FNREE3WEARG48" target="_blank"><img data-attachment-id="25" data-permalink="https://refugiozoobrevivientes.wordpress.com/acerca-de/button-6-2/" data-orig-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-61.png" data-orig-size="526,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="button (6)" data-image-description="" data-medium-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-61.png?w=300" data-large-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-61.png?w=526" class="alignnone size-full wp-image-25" src="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-61.png?w=702" alt="button (6)" srcset="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-61.png 526w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-61.png?w=150 150w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-61.png?w=300 300w" sizes="(max-width: 526px) 100vw, 526px"></a>
+									</p>
+									<p>
+										<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=FNREE3WEARG48" target="_blank"><img data-attachment-id="28" data-permalink="https://refugiozoobrevivientes.wordpress.com/acerca-de/button-8-2/" data-orig-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-81.png" data-orig-size="412,40" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="button (8)" data-image-description="" data-medium-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-81.png?w=300" data-large-file="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-81.png?w=412" class="alignnone size-full wp-image-28" src="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-81.png?w=702" alt="button (8)" srcset="https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-81.png 412w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-81.png?w=150 150w, https://refugiozoobrevivientes.files.wordpress.com/2015/04/button-81.png?w=300 300w" sizes="(max-width: 412px) 100vw, 412px"></a>
+									</p>
+									
+								</div>
+								
+							<!--
+							<button class="ppvx_btn btn-wide" id="payWithPP" pa-marked="1">Donar con PayPal</button>
+							<a href="#" class="primary-btn text-uppercase">get details</a>
+							-->
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End home-about Area -->
+			
+			<!-- Start process Area -->
+			<section class="process-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Otras formas de ayudarnos</h1>
+								<p>También podés ayudarnos con los siguientes temas</p>
+							</div>
+						</div>
+					</div>					
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-heart-pulse"></span>
+								<a href="#">
+									<h4>MEDICAMENTOS (no vencidos)</h4>
+								</a>
+								<p>
+								<ul>
+									<li>· Antipulgas (Pipetas, spray, aerosol)</li>
+									<li>· Antiparasitarios</li>
+									<li>· Complejos vitamínicos</li>
+									<li>· Amoxicilina Clavulánica</li>
+									<li>· Cefalexina 500</li>
+									<li>· Ivermectina</li>
+									<li>· Dipenisol inyectable</li>
+									<li>· Tribiotic</li>
+									<li>· Enrofloxacina inyectable</li>
+									<li>· Kualcovit</li>
+									<li>· Dexametasona (inyectable o en comprimidos)</li>
+									<li>· Prednisolona</li>
+									<li>· Tramadol (inyectable o en comprimidos)</li>
+									<li>· Diazepam</li>
+									<li>· Fenobarbital</li>
+									<li>· Lidocaína</li>
+									<li>· Vincristina</li>
+									<li>· Curabichera</li>
+									<li>· Vitamina A y B</li>
+									<li>· Calcio</li>
+									<li>· Corulets</li>
+								</ul>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-heart"></span>
+								<a href="#">
+									<h4>CURACIONES</h4>
+								</a>
+								<p>
+								<ul>
+									<li>· Agua oxigenada</li>
+									<li>· Pervinox</li>
+									<li>· Solución fisiológica</li>
+									<li>· Jeringas</li>
+									<li>· Agujas</li>
+									<li>· Tela adhesiva</li>
+									<li>· Gasas</li>
+									<li>· Vendas</li>
+									<li>· Guantes descartables</li>
+								</ul>        
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-paw"></span>
+								<a href="#">
+									<h4>ALIMENTO</h4>
+								</a>
+								<p>
+								<ul>
+									<li>· Balanceado para adultos (perros y gatos) </li>
+									<li>· Balanceado para cachorros (perros y gatos) </li>
+									<li>· Alimento blando: Recovery, A/D, Convalescence</li>
+									<li>· Arroz</li>
+									<li>· Polenta</li>
+								</ul>      
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-drop"></span>
+								<a href="#">
+									<h4>ARTICULOS DE LIMPIEZA</h4>
+								</a>
+								<p>
+								<ul>
+									<li>· Lavandina</li>
+									<li>· Desinfectantes</li>
+									<li>· Lysoform en aerosol</li>
+									<li>· Detergente</li>
+									<li>· Baldes</li>
+									<li>· Escobas</li>
+									<li>· Secadores de piso</li>
+									<li>· Trapos de piso</li>
+									<li>· Etc</li>
+								</ul>      
+									     
+								</p>
+							</div>
+						</div>		
+						<div class="col-lg-4 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-gift"></span>
+								<a href="#">
+									<h4>
+										CON TRANSFERECIAS o DEPOSITO
+									</h4>
+								</a>
+								<p>
+								<ul>
+									<li>· VÍA CUENTA BANCARIA: REFUGIO ZOOBREVIVIENTES</li>
+									<li>· TITULAR: Salazar Juarez Cintia</li>
+									<li>· BANCO PROVINCIA SUCURSAL: 5047</li>
+									<li>· NUMERO DE CAJA DE AHORRO: 5120926</li>
+									<li>· CBU: 014011780350475120926-8</li>
+									<li>· CUIL: 27-29469374-8</li>
+								</ul>      
+								</p>
+							</div>
+						</div>	
+						<div class="col-lg-4 col-md-6">
+							<div class="single-process">
+								<span class="lnr lnr-store"></span>
+								<a href="#">
+									<h4>
+										VARIOS
+									</h4>
+								</a>
+								<p>
+								<ul>
+									<li>· Cuchas</li>
+									<li>· Bozales</li>
+									<li>· Collares y correas</li>
+									<li>· Mantas (sábanas viejas, frazadas, etc.)</li>
+									<li>· Toallas</li>
+									<li>· Comederos</li>
+									<li>· Diarios</li>
+									<li>· Cajas de cartón (de zapatillas o similar)</li>
+								</ul>      
+								</p>
+							</div>
+						</div>									
+					</div>
+				</div>	
+			</section>
+			<!-- End process Area -->
+								
+
+			<!-- Start video Area -->
+			<section class="seccionAyuda video-area section-gap">
+				<div class="container">
+					<div class="row justify-content-center home-about-right align-items-center">
+						<h1>Refugio Zoobrevivientes en los medios</h1>
+						<div class="col-lg-6">
+							<div class="about-video-right justify-content-center align-items-center d-flex relative">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/RbOlMowP9Ko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="description">
+								<h4>Nos pudiste ver en Crónica</h4>							
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="about-video-right justify-content-center align-items-center d-flex relative">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/nDMurQVQaHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="description">
+								<h4>Nos pudiste ver en TN</h4>
+								
+							</div>
+						</div>
+						
+						
+						
+					</div>
+				</div>	
+			</section>
+			<!-- End video Area -->
+			
+			
+			<!-- start footer Area -->		
+			<footer class="footer-area">
+				<div class="container">
+					<div class="row pt-120 pb-80">
+						<div class="col-lg-6 col-md-6">
+							<div class="single-footer-widget">
+								<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzoobrevivientesrefugio%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1102971466432177" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+							</div>
+						</div>
+						<!--<div class="col-lg-4 col-md-6">
+							<div class="single-footer-widget">
+								<iframe src="https://www.instagram.com/refugiozoobrevivientes/" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+							</div>
+						</div>	-->						
+						<div class="col-lg-6  col-md-6">
+							<div class="single-footer-widget mail-chimp">
+								<h6 class="mb-20">Contactate con nosotros</h6>
+								<ul class="list-contact">
+									<li class="flex-row d-flex">
+										<div class="icon">
+											<span class="lnr lnr-home"></span>
+										</div>
+										<div class="detail">
+											<h4>Merlo, Buenos Aires</h4>
+											<p>
+												
+											</p>
+										</div>	
+									</li>
+									<li class="flex-row d-flex">
+										<div class="icon">
+											<span class="lnr lnr-phone-handset"></span>
+										</div>
+										<div class="detail">
+											<h4>+54 9 11 4161 3093</h4>
+											<p>
+												Cintia Zalazar Juarez
+											</p>
+										</div>	
+									</li>
+									<li class="flex-row d-flex">
+										<div class="icon">
+											<span class="lnr lnr-envelope"></span>
+										</div>
+										<div class="detail">
+											<h4>refugiozoobrevivientes08@hotmail.com</h4>
+											<p>
+												Envianos un mail con tus dudas!
+											</p>
+										</div>	
+									</li>																		
+								</ul>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="copyright-text">
+					<div class="container">
+						<div class="row footer-bottom d-flex justify-content-between">
+							<p class="col-lg-8 col-sm-6 footer-text m-0 text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla ha sido hecha con <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+							<div class="col-lg-4 col-sm-6 footer-social">
+								<a href="https://www.facebook.com/zoobrevivientesrefugio/"><i class="fa fa-facebook"></i></a>
+								<a href="https://www.instagram.com/refugiozoobrevivientes/"><i class="fa fa-instagram"></i></a>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->	
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>							
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
